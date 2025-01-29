@@ -37,10 +37,11 @@ solution(box) = [['#', '.', '.'],
 ```
 
 # Usage
-Launch & attach dev container
-cd to ./scripts/
-run ./compile.sh
-exec installed executable
+1. Launch my dev container
+2. cd to ./scripts/
+3. run ./get_dependencies.sh
+4. run ./compile.sh
+5. exec installed executable
 
 compiled in gcc, dev container lacks gdb debugger though :(
 
