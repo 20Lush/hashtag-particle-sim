@@ -2,21 +2,38 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
-// Make sure to change the namespace EXECUTABLE to something more specific
-namespace lush::EXECUTABLE {
+namespace lush::particles {
 	
 	using namespace std;
 	
-	const vector<vector<string>> input_frame_1;
-	const vector<vector<string>> input_frame_2;
+	const vector<vector<string>> input_frame_1 = {	{"#", "#", ".", ".", ".", ".", "."},
+													{"#", "#", "#", ".", ".", ".", "."},
+													{"#", "#", "#", ".", ".", "#", "."}};
 
-	const string particle;
-	const string empty;
-	const string obstacle;
+	const vector<vector<string>> solution_1 = {	{".", ".", "."},
+												{".", ".", "."},
+												{".", ".", "."},
+												{"#", ".", "."},
+												{"#", "#", "."},
+												{"#", "#", "#"},
+												{"#", "#", "#"}};
 
-	vector<vector<string>> step(vector<vector<string>> const& incoming_frame);
+	const vector<vector<string>> input_frame_2 = {	{"#", "#", ".", ".", ".", "#", "."},
+													{"#", "#", "#", ".", ".", "*", "."},
+													{"#", "#", "#", "*", ".", "#", "."}};
 
-	vector<vector<string>> rotate_clockwise(vector<vector<string>> const& frame);
+	const vector<vector<string>> solution_2 = {	{"#", ".", "."},
+												{"#", ".", "."},
+												{"#", "#", "."},
+												{"*", "#", "."},
+												{".", "#", "#"},
+												{".", "*", "#"},
+												{"#", ".", "#"} };
 
-}  // namespace lush::EXECUTABLE
+	const string particle = "#";
+	const string obstacle = "*";
+	const string empty = ".";
+
+}  // namespace lush::particles

@@ -8,10 +8,10 @@ project(Hashtag-Particle-Sim
 message(STATUS "Project name: " ${PROJECT_NAME})
 
 # Put some versioning info into our runtime environment
-configure_file(
-    "${PROJECT_SOURCE_DIR}/include/version.hpp.in"
-    "${PROJECT_SOURCE_DIR}/include/version.hpp"
-)
+# configure_file(
+#     "${PROJECT_SOURCE_DIR}/include/version.hpp.in"
+#     "${PROJECT_SOURCE_DIR}/include/version.hpp"
+# )
 
 # Define what source files we actually are going to compile
 set(SOURCE_FILES

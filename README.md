@@ -42,12 +42,4 @@ cd to ./scripts/
 run ./compile.sh
 exec installed executable
 
-
-1.          VV here
-{"#", "#", ".", ".", ".", ".", "."}
-{"#", ".", "#", ".", ".", ".", "."} <- drops the particle
-
-2.     VV here
-{"#", ".", "#", ".", ".", ".", "."}
-{".", "#", "#", ".", ".", ".", "."} <- drops the particle
-
+compiled in gcc, dev container lacks gdb debugger though :(
