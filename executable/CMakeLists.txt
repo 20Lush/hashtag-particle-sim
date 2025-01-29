@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.22)
 
 # Lets initialize the project for our actual executable
-project(EXECUTABLE_NAME
+project(Hashtag-Particle-Sim
     VERSION ${PROJECT_VERSION}
-    DESCRIPTION "EXECUTABLE Project"
+    DESCRIPTION "Hashtag-Particle-Sim Project"
 )
 message(STATUS "Project name: " ${PROJECT_NAME})
 
