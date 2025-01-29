@@ -35,6 +35,9 @@ solution(box) = [['#', '.', '.'],
                  ['#', '.', '#']]
 
 ```
+# Solution
+
+see ./executable/src/main.cpp
 
 # Usage
 1. Launch my dev container
